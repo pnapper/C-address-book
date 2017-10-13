@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using AddressBook.Models;
 
-namespace CdOrganizer.Controllers
+namespace AddressBook.Controllers
 {
   public class HomeController : Controller
   {
@@ -10,14 +10,14 @@ namespace CdOrganizer.Controllers
     [HttpGet("/")]
     public ActionResult Index()
     {
-      return View();
+      List<Contact> allContacts = Contact.GetAll();
+      return View(allContacts);
     }
 
     [HttpGet("/contacts")]
-    public ActionResult Names()
+    public ActionResult Contacts()
     {
-      List<Album> allContacts = Contact.GetAll();
-      return View(allContacts);
+      return View();
     }
 
     [HttpGet("/contacts/new")]
@@ -26,12 +26,19 @@ namespace CdOrganizer.Controllers
       return View();
     }
 
-    [HttpPost("/contacts")]
+    [HttpPost("/")]
     public ActionResult AddContact()
     {
-      Contact newContact = new Contact(Request.Form["new-contact"]);
+      Contact newContact = new Contact(Request.Form["contact-name"], int.Parse(Request.Form["contact-phone"]), Request.Form["contact-address"]);
       List<Contact> allContacts = Contact.GetAll();
       return View("Contacts", allContacts);
+    }
+
+    [HttpGet("/{id}")]
+    public ActionResult ContactDetail(int id)
+    {
+      Contact contact = Contact.Find(id);
+      return View(contact);
     }
   }
 }

@@ -1,3 +1,10 @@
 /Users/patrick/Desktop/address-book/obj/Debug/netcoreapp1.1/address_book.csproj.CoreCompileInputs.cache
 /Users/patrick/Desktop/address-book/obj/Debug/netcoreapp1.1/address_book.AssemblyInfoInputs.cache
 /Users/patrick/Desktop/address-book/obj/Debug/netcoreapp1.1/address_book.AssemblyInfo.cs
+/Users/patrick/Desktop/address-book/bin/Debug/netcoreapp1.1/address_book.deps.json
+/Users/patrick/Desktop/address-book/bin/Debug/netcoreapp1.1/address_book.runtimeconfig.json
+/Users/patrick/Desktop/address-book/bin/Debug/netcoreapp1.1/address_book.runtimeconfig.dev.json
+/Users/patrick/Desktop/address-book/bin/Debug/netcoreapp1.1/address_book.dll
+/Users/patrick/Desktop/address-book/bin/Debug/netcoreapp1.1/address_book.pdb
+/Users/patrick/Desktop/address-book/obj/Debug/netcoreapp1.1/address_book.dll
+/Users/patrick/Desktop/address-book/obj/Debug/netcoreapp1.1/address_book.pdb

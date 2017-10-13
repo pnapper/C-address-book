@@ -7,6 +7,7 @@ namespace AddressBook.Models
     private string _name;
     private int _phone;
     private string _address;
+    private int _id;
     private static List<Contact> _instances = new List<Contact> {};
 
     public Contact(string name, int phone, string address)
@@ -33,7 +34,7 @@ namespace AddressBook.Models
       return _phone;
     }
 
-    public void SetPhone(string newPhone)
+    public void SetPhone(int newPhone)
     {
       _phone = newPhone;
     }
@@ -52,10 +53,12 @@ namespace AddressBook.Models
     {
       return _id;
     }
+
     public static List<Contact> GetAll()
     {
       return _instances;
     }
+
     public static Contact Find(int searchId)
     {
       return _instances[searchId-1];
