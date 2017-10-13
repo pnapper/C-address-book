@@ -1,0 +1,3 @@
+/Users/patrick/Desktop/address-book/obj/Debug/netcoreapp1.1/address_book.csproj.CoreCompileInputs.cache
+/Users/patrick/Desktop/address-book/obj/Debug/netcoreapp1.1/address_book.AssemblyInfoInputs.cache
+/Users/patrick/Desktop/address-book/obj/Debug/netcoreapp1.1/address_book.AssemblyInfo.cs
