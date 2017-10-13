@@ -19,6 +19,22 @@ namespace AddressBook.Models
       _id = _instances.Count;
     }
 
+  // public class Address
+  // {
+  //   private string _address;
+  //   private string _city;
+  //   private string _state;
+  //   private int _zip;
+  //   private static List<Address> _instances = new List<Address> {};
+
+    // public Address(string address, string city, string state, int zip)
+    // {
+    //   _address = address;
+    //   _city = city;
+    //   _state = state;
+    //   _zip = zip;
+    // }
+
     public string GetName()
     {
       return _name;
@@ -62,6 +78,11 @@ namespace AddressBook.Models
     public static Contact Find(int searchId)
     {
       return _instances[searchId-1];
+    }
+
+    public static void Clear()
+    {
+      _instances.Clear();
     }
 
     public static void ClearAll()
