@@ -40,5 +40,12 @@ namespace AddressBook.Controllers
       Contact contact = Contact.Find(id);
       return View(contact);
     }
+
+    [HttpPost("/contacts/clear")]
+    public ActionResult ContactsClear()
+    {
+      Contact.ClearAll();
+      return View();
+    }
   }
 }

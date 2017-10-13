@@ -63,5 +63,10 @@ namespace AddressBook.Models
     {
       return _instances[searchId-1];
     }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
   }
 }
